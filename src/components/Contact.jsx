@@ -209,7 +209,7 @@ const Contact = () => {
             />
           </label>
 
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <div className="rounded-lg overflow-hidden shadow-lg">
               <ReCAPTCHA
                 sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
@@ -218,7 +218,7 @@ const Contact = () => {
                 ref={captchaRef}
               />
             </div>
-          </div>
+          </div> */}
           <span className="text-xs text-gray-400 text-center -mt-4">Protected by reCAPTCHA Enterprise. ⚔️</span>
 
           <button
