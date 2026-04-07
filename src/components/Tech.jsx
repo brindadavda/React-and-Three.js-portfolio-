@@ -11,24 +11,31 @@ import {
   mobile,
   azure,
   github,
+  bitbucket,
+  kotlin,
+  android_studio,
+  xcode,
+  swift,
+  python
 } from "../assets";
 import figma from "../assets/tech/figma.png";
 
 const programming = [
+  { name: "Python", icon: python },
   { name: "JavaScript", icon: javascript },
   { name: "Java", icon: java },
-  { name: "Kotlin", icon: java },
-  { name: "Swift", icon: mobile },
+  { name: "Kotlin", icon: kotlin },
+  { name: "Swift", icon: swift },
   { name: "MongoDB", icon: mongodb },
 ];
 
 const itTools = [
-  { name: "Xcode", icon: mobile },
-  { name: "Android Studio", icon: java },
+  { name: "Xcode", icon: xcode },
+  { name: "Android Studio", icon: android_studio },
   { name: "Figma", icon: figma },
   { name: "Jira", icon: azure },
   { name: "Github", icon: github },
-  { name: "Bitbucket", icon: azure },
+  { name: "Bitbucket", icon: bitbucket },
 ];
 
 const Tech = () => {

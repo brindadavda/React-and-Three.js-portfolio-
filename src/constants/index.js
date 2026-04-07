@@ -56,6 +56,10 @@ import {
   mongodb,
   microsoft,
   ibm,
+  ep,
+  kevit,
+  zero,
+  am
 } from "../assets";
 
 export const navLinks = [
@@ -251,7 +255,7 @@ const experiences = [
   {
     title: "iOS Developer",
     company_name: "Enpoint | Mumbai",
-    icon: google,
+    icon: ep,
     iconBg: "#fff",
     date: "Sep 2024 - Present",
     points: [
@@ -263,7 +267,7 @@ const experiences = [
   {
     title: "iOS Developer",
     company_name: "Zerones | Mumbai",
-    icon: google,
+    icon: zero,
     iconBg: "#fff",
     date: "Jan 2024 - Sep 2024",
     points: [
@@ -275,7 +279,7 @@ const experiences = [
   {
     title: "Backend Intern",
     company_name: "Kevit Technologies | Rajkot, Gujarat",
-    icon: google,
+    icon: kevit,
     iconBg: "#fff",
     date: "Jul 2023 - Dec 2023",
     points: [
@@ -290,7 +294,7 @@ const extracurricular = [
   {
     title: "Azadi Ka Amrit Mahotsav Hackathon 2022",
     type: "Finalist & Team Lead",
-    icon: google,
+    icon: am,
     iconBg: "#052FAD",
     date: "2022",
     points: [
@@ -345,8 +349,8 @@ const projects = [
       },
     ],
     image: axelotlanding,
-    source_code_link: "https://github.com/brindadavda",
-    live_project_link: "https://github.com/brindadavda",
+    source_code_link: "https://github.com/Infyu-Labs/infyu_track_unity_ios_framework",
+    live_project_link: "https://github.com/Infyu-Labs/infyu_track_unity_ios_framework",
   },
   {
     name: "Custom Video & Engagement Frameworks",
@@ -367,8 +371,8 @@ const projects = [
       },
     ],
     image: netdashlanding,
-    source_code_link: "https://github.com/brindadavda",
-    live_project_link: "https://github.com/brindadavda",
+    source_code_link: "https://github.com/Infyu-Labs/video_player_sdk_framework",
+    live_project_link: "https://github.com/Infyu-Labs/video_player_sdk_framework",
   },
   {
     name: "Widget Pixel Pet",
@@ -389,8 +393,8 @@ const projects = [
       },
     ],
     image: securebankdashboard,
-    source_code_link: "https://github.com/brindadavda",
-    live_project_link: "https://github.com/brindadavda",
+    source_code_link: "https://github.com/brindadavda/Widget-Pixel-Pet-Swift-UI-",
+    live_project_link: "https://github.com/brindadavda/Widget-Pixel-Pet-Swift-UI-",
   },
 ];
 

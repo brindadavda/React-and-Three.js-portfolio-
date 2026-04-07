@@ -142,7 +142,7 @@ const Extracurricular = () => {
           background-position: center;
           background-size: cover;
           width: 280px;
-          height: 380px;
+          height: 280px;
         }
         .swiper-slide-active {
           transform: scale(1.1) !important;
