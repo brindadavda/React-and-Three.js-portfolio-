@@ -4,80 +4,50 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
-// Import all assets
 import {
-  python,
   javascript,
   java,
-  cplusplus,
-  typescript,
-  docker,
-  tailwind,
-  reactjs,
-  postgresql,
   mongodb,
-  threejs,
-  aws,
-  ubuntu,
-  powershell,
+  mobile,
   azure,
-  cisco,
-  connectwise,
-  virtualbox,
-  kalilinux,
-  wireshark,
-  nmap,
-  johntheripper,
-  photoshop,
-  premiere,
-  cinema4d,
+  github,
+  bitbucket,
+  kotlin,
+  android_studio,
+  xcode,
+  swift,
+  python
 } from "../assets";
+import figma from "../assets/tech/figma.png";
 
 const programming = [
   { name: "Python", icon: python },
-  { name: "Java", icon: java },
-  { name: "C++", icon: cplusplus },
   { name: "JavaScript", icon: javascript },
-  { name: "TypeScript", icon: typescript },
-  { name: "Docker", icon: docker },
-  { name: "Tailwind CSS", icon: tailwind },
-  { name: "React JS", icon: reactjs },
-  { name: "PostgreSQL", icon: postgresql },
+  { name: "Java", icon: java },
+  { name: "Kotlin", icon: kotlin },
+  { name: "Swift", icon: swift },
   { name: "MongoDB", icon: mongodb },
-  { name: "Three.js", icon: threejs },
 ];
 
 const itTools = [
-  { name: "AWS", icon: aws },
-  { name: "Ubuntu", icon: ubuntu },
-  { name: "PowerShell", icon: powershell },
-  { name: "Azure", icon: azure },
-  { name: "Cisco", icon: cisco },
-  { name: "ConnectWise", icon: connectwise },
-  { name: "VirtualBox", icon: virtualbox },
-  { name: "Kali Linux", icon: kalilinux },
-  { name: "Wireshark", icon: wireshark },
-  { name: "Nmap", icon: nmap },
-  { name: "John the Ripper", icon: johntheripper },
-];
-
-const contentProduction = [
-  { name: "Photoshop", icon: photoshop },
-  { name: "Premiere Pro", icon: premiere },
-  { name: "Cinema 4D", icon: cinema4d },
+  { name: "Xcode", icon: xcode },
+  { name: "Android Studio", icon: android_studio },
+  { name: "Figma", icon: figma },
+  { name: "Jira", icon: azure },
+  { name: "Github", icon: github },
+  { name: "Bitbucket", icon: bitbucket },
 ];
 
 const Tech = () => {
   const [rows, setRows] = useState({
     programming: [],
     itTools: [],
-    contentProduction: [],
   });
 
   const ref = useRef(null);
-  const isInView = useInView(ref, { 
+  const isInView = useInView(ref, {
     once: true,
-    amount: 0.2
+    amount: 0.2,
   });
   const mainControls = useAnimation();
 
@@ -88,37 +58,20 @@ const Tech = () => {
   }, [isInView, mainControls]);
 
   const calculateRows = (width, techArray) => {
-    let dynamicRows = [];
-    let startIndex = 0;
-    let rowSize = 6;
-
     if (width < 500) {
-      dynamicRows = [
-        techArray.slice(0, 3),
-        techArray.slice(3, 5),
-        techArray.slice(5, 8),
-        techArray.slice(8, 10),
-      ];
-    } else {
-      while (startIndex < techArray.length) {
-        const endIndex = startIndex + rowSize;
-        dynamicRows.push(techArray.slice(startIndex, endIndex));
-        startIndex += rowSize;
-        rowSize = rowSize === 6 ? 5 : 6;
-      }
+      return [techArray.slice(0, 3), techArray.slice(3)];
     }
 
-    return dynamicRows;
+    const rowSize = Math.min(6, techArray.length);
+    return [techArray.slice(0, rowSize), techArray.slice(rowSize)].filter((row) => row.length > 0);
   };
 
   useEffect(() => {
     const calculateRowsForAllCategories = () => {
-      const rowsData = {
+      setRows({
         programming: calculateRows(window.innerWidth, programming),
         itTools: calculateRows(window.innerWidth, itTools),
-        contentProduction: calculateRows(window.innerWidth, contentProduction),
-      };
-      setRows(rowsData);
+      });
     };
 
     calculateRowsForAllCategories();
@@ -133,20 +86,20 @@ const Tech = () => {
 
   const hexagonVariants = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: { 
-      opacity: 1, 
-      scale: 1, 
-      transition: { 
-        delay: Math.random() * 1.5, 
-        duration: 0.5, 
-        type: "spring" 
-      } 
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delay: Math.random() * 1.5,
+        duration: 0.5,
+        type: "spring",
+      },
     },
     hover: {
       scale: 1.05,
       zIndex: 2,
-      transition: { duration: 0.3 }
-    }
+      transition: { duration: 0.3 },
+    },
   };
 
   const renderCategory = (categoryName, categoryRows) => (
@@ -192,7 +145,7 @@ const Tech = () => {
                 animate="visible"
                 whileHover="hover"
               >
-                <img src={tech.icon} alt={tech.name}  style={{ userSelect: "none" }} draggable="false"/>
+                <img src={tech.icon} alt={tech.name} style={{ userSelect: "none" }} draggable="false" />
               </motion.div>
             ))}
           </div>
@@ -227,7 +180,6 @@ const Tech = () => {
         </motion.div>
         {renderCategory("programming", rows.programming)}
         {renderCategory("itTools", rows.itTools)}
-        {renderCategory("contentProduction", rows.contentProduction)}
       </div>
     </section>
   );

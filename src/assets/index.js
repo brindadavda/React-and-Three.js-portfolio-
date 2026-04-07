@@ -58,6 +58,16 @@ import whmis from "./company/whmis.png"
 import aws from "./tech/aws.png";
 import microsoft from "./company/microsoft.png";
 import ibm from "./company/ibm.svg";
+import ep from "./company/EP.png";
+import zero from "./company/zero.png";
+import kevit from "./company/kevit.png";
+
+import android_studio from "./tech/Android_Studio.jpeg"
+import bitbucket from "./tech/Bitbucket.jpeg"
+import kotlin from "./tech/kotlin.jpeg"
+import swift from "./tech/swift.jpeg"
+import xcode from "./tech/xcode.jpeg"
+import am from "./company/am.png"
 
 import axelotlanding from "./axelotlanding.png"
 import netdashlanding from "./netdashlanding.png"
@@ -144,5 +154,14 @@ export {
   azure,
   staples,
   microsoft,
-  ibm
+  ibm,
+  ep,
+  zero,
+  kevit,
+  android_studio,
+  bitbucket,
+  kotlin,
+  swift,
+  xcode,
+  am
 };
