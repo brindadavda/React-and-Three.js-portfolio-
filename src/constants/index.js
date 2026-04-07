@@ -91,69 +91,66 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Software Developer",
+    title: "iOS App Development",
     icon: fullstack,
   },
   {
-    title: "Systems Infrastructure",
+    title: "SwiftUI & UIKit",
     icon: backend,
   },
   {
-    title: "Cloud Automation",
+    title: "SDK & Framework Development",
     icon: mobile,
   },
   {
-    title: "Workflows",
+    title: "API Integration",
     icon: web,
   },
 ];
 
 const education = [
   {
-    title: "Honours Computer Science (H. BSc)",
-    company_name: "Ontario Tech University, Oshawa, ON",
+    title: "Bachelor of Engineering in Information Technology",
+    company_name: "Gujarat Technological University",
     icon: otu,
     iconBg: "#fff",
-    date: "2022 - Present",
+    date: "June 2020 - June 2024",
     points: [
-      "President's List - Winter 2025",
-      "Dean's Honours List - Fall 2024",
-      // "Courses undertaken: Data Structures and Algorithms, OOP, REST API, Software Design, Python Data Analysis, Discrete Mathematics, Computer Architecture, Operating Systems, PostgreSQL.",
+      "CGPA: 9.02 / 10",
     ],
   },
   {
-    title: "High School",
-    company_name: "Richmond Hill High School, ON",
+    title: "Higher Secondary (Science)",
+    company_name: "Gujarat University",
     icon: rhhs,
     iconBg: "#fff",
-    date: "2018-2022",
+    date: "June 2018 - June 2020",
     points: [
-      "Ontario Scholar",
-      "12th Grade: 96%",
+      "Score: 74.92%",
     ],
   },
 ];
 
 const technologies = [
   {
-    name: "Java",
-    icon: java,
+    name: "Swift",
+    icon: mobile,
   },
   {
-    name: "Python",
-    icon: python,
+    name: "SwiftUI",
+    icon: reactjs,
   },
   {
-    name: "C++",
-    icon: cplusplus,
-  },
-    {
-    name: "PowerShell",
-    icon: powershell,
+    name: "UIKit",
+    icon: web,
   },
   {
-    name: "Kali Linux",
-    icon: kalilinux,
+    name: "AVFoundation",
+    icon: backend,
+  },
+  {
+    name: "WidgetKit",
+    icon: tailwind,
   },
   {
     name: "MongoDB",
@@ -167,25 +164,17 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  // {
-  //   name: "HTML 5",
-  //   icon: html,
-  // },
-    {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  }, 
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "GraphQL",
+    icon: aws,
   },
   {
     name: "TypeScript",
     icon: typescript,
   },
   {
-    name: "AWS",
-    icon: aws,
+    name: "Firebase",
+    icon: google,
   },
 ];
 
@@ -260,55 +249,38 @@ const designTools = [
 
 const experiences = [
   {
-    title: "Software Engineer Intern",
-    company_name: "IBM",
+    title: "iOS Developer",
+    company_name: "Enpoint | Mumbai",
+    icon: google,
+    iconBg: "#fff",
+    date: "Sep 2024 - Present",
+    points: [
+      "Working on a live global cinema iOS application (Cinépolis GO) available on the App Store.",
+      "Contributing to feature development, enhancements, and maintenance using SwiftUI and UIKit.",
+      "Integrating GraphQL APIs and collaborating with cross-functional teams in an Agile environment.",
+    ],
+  },
+  {
+    title: "iOS Developer",
+    company_name: "Zerones | Rajkot, Gujarat",
+    icon: microsoft,
+    iconBg: "#fff",
+    date: "Jan 2024 - Sep 2024",
+    points: [
+      "Conducted code modifications to improve application execution and performance.",
+      "Analyzed client requirements and collaborated with the team to deliver solutions.",
+      "Explored alternate development options under the guidance of senior developers.",
+    ],
+  },
+  {
+    title: "Backend Intern",
+    company_name: "Kevit Technologies | Rajkot, Gujarat",
     icon: ibm,
     iconBg: "#fff",
-    date: "Jan. 2026 - Present",
+    date: "Jul 2023 - Dec 2023",
     points: [
-      "Full-Stack AI Engineering • watsonx Workshop 🤖",
-    ],
-  },
-  {
-    title: "IT Technician",
-    company_name: "Canada's Wonderland",
-    icon: wonderland,
-    iconBg: "#fff",
-    date: "Jun. 2023 - Jan. 2026",
-    points: [
-      "Provisioned Windows PCs with MDT, and deployed scripting via PowerShell and ConnectWise.",
-      "Managed AD accounts to propagate ACLs and unified access across in-house apps, Exchange, and SharePoint.",
-      "Configured Cisco CUCM, Unity, and Finesse for stable call routing and voicemail services.",
-      "Handled switch patching and VLAN/routing via PuTTY & SecureCRT, ensuring stable network performance.",
-      "Deployed Oracle POS/KDS/Debit solutions (EMC, Simphony), tracking updates in Jira & Confluence.",
-    ],
-  },
-  {
-    title: "System Support Specialist",
-    company_name: "Mackenzie Health",
-    icon: mackenziehealth,
-    iconBg: "#fff",
-    date: "Jan. 2023 - Aug. 2023",
-    points: [
-      "Overhauled 400+ Surface tablets to bedside iPads, deploying the in-house 'Get Well Soon' app with Intune to hospital systems.",
-      "Developed and refined an admin portal for managing app services, user roles, and subscription expirations.",
-      "Utilized Jamf Pro for MDM, securely deploying iPads/iPhones across clinical departments.",
-      "Implemented Vocera VOIP on iPhones, enabling real-time communication among nurses and ER staff.",
-      "Performed in-room checks, resolved device issues, and collaborated with vendors on bug logs and system updates.",
-    ],
-  },
-  {
-    title: "Tech Sales Associate",
-    company_name: "Staples Canada (Co-op)",
-    icon: staples,
-    iconBg: "#1294C8",
-    date: "Sep. 2020 - Feb. 2021",
-    points: [
-      "Provided specialized support for Windows, Mac, and Linux, performing on-site installations, repairs, and optimizations.",
-      "Streamlined inventory processes by handling SKUs and POs, maintaining a well-organized sales floor.",
-      "Maintained accurate sales and inventory data in IBM AS/400, improving workflows and operational efficiency.",
-      "Resolved complex technical inquiries, delivering tailored solutions that ensured high customer satisfaction.",
-      "Facilitated e-commerce transactions, merging in-store and online channels.",
+      "Created APIs in TypeScript with MongoDB.",
+      "Learned and worked with JavaScript, Node.js, and Nest.js.",
     ],
   },
 ];
@@ -316,355 +288,110 @@ const experiences = [
 
 const extracurricular = [
   {
-    title: "IBM RAG and Agentic AI",
-    type: "Professional Certificate",
-    icon: ibm,
-    iconBg: "#052FAD",
-    date: "Feb 2026",
-    points: [
-      "RAG Pipelines, Vector Databases, Agentic AI, LangChain, LangGraph, CrewAI, AutoGen, BeeAI, MCP, Multimodal Generative AI",
-    ],
-    credential: "https://coursera.org/verify/professional-cert/S9ENFFEVMD37",
-  },
-  {
-    title: "Microsoft Full-Stack Developer",
-    type: "Professional Certificate",
-    icon: microsoft,
-    iconBg: "#000000",
-    date: "Feb 2026",
-    points: [
-      "C#, .NET 10, Blazor WebAssembly, ASP.NET Core Web API, SQL Server, JWT Auth, RBAC, CI/CD, Entity Framework Core",
-    ],
-    credential: "https://coursera.org/verify/professional-cert/MSK7DL3J65TJ",
-  },
-  {
-  title: "GitHub Copilot Intermediate (GH-300)",
-  type: "Professional Certificate",
-  icon: microsoft,
-  iconBg: "#000000",
-  date: "Issued: Oct 13, 2025 - Expires: Oct 13, 2027",
-  points: [
-    "Prompt Engineering, Copilot Chat Architecture, Policy Enforcement, Enterprise AI Integration, Secure Development Workflows"
-  ],
-  credential: "https://learn.microsoft.com/api/credentials/share/en-us/sunnypatell/D07D3774894C605?sharingId=6255C292987551EF",
-  },
-  {
-    title: "MongoDB Python Developer Path",
-    type: "Proof of Completion",
-    icon: mongodb,
-    iconBg: "#000000",
-    date: "Feb 2025",
-    points: ["PyMongo, NoSQL Schema Design, Data Aggregation, MongoDB Query Optimization"],
-    credential: "https://learn.mongodb.com/c/tf2DSC7hTcyM3NBZjkLPoA",
-  },
-  {
-    title: "Github Foundations",
-    type: "Professional Certificate",
-    icon: github,
-    iconBg: "#000000",
-    date: "Issued: Sep 2024 - Expires: Sep 2027",
-    points: ["Version Control, Git, Actions, CI/CD, Repository Management, SAP Workflow"],
-    credential: "https://www.credly.com/badges/b6f69785-2da8-447e-b02c-3350bf9af803",
-  },
-  {
-    title: "Certified Enterprise Scripting Architect",
-    type: "Automate | Connectwise University",
-    icon: connectwise,
-    iconBg: "#748C7B",
-    date: "Jul 2024",
-    points: ["RMM, MDM, Powershell, Scripting, Windows Server, Enterprise Architecture, Query Optimization"],
-    credential: connectwisecert,
-  },
-  {
-    title: "Google IT Automation With Python",
-    type: "Professional Certificate",
+    title: "Azadi Ka Amrit Mahotsav Hackathon 2022",
+    type: "Finalist & Team Lead",
     icon: google,
-    iconBg: "#050C18",
-    date: "Mar 2023",
+    iconBg: "#052FAD",
+    date: "2022",
     points: [
-      "Configuration Management, Automation, Google Cloud Platform (GCP), Cloud Servers and VM's, Version Control Tools, Automation.",
+      "Led a team in a national-level hackathon and reached finalist stage.",
     ],
-    credential: "https://www.coursera.org/account/accomplishments/specialization/certificate/82SZFUWF4B3T",
   },
   {
-    title: "WHMIS (Worker Health and Safety)",
-    type: "Government Workforce Requirement",
-    icon: whmis,
-    iconBg: "#CCCFD8",
-    date: "Sep 2020",
-    points: ["Hazard Awareness, Legal Compliance, Personal Protection, Accident Prevention"],
+    title: "Google Cloud Platform Bootcamp",
+    type: "Certification",
+    icon: google,
+    iconBg: "#000000",
+    date: "Completed",
+    points: [
+      "Hands-on cloud fundamentals and deployment concepts.",
+    ],
+  },
+  {
+    title: "Python Mega Course",
+    type: "Certification",
+    icon: python,
+    iconBg: "#000000",
+    date: "Completed",
+    points: ["Python programming fundamentals and practical problem-solving."],
+  },
+  {
+    title: "Android Programming with Java",
+    type: "Certification",
+    icon: java,
+    iconBg: "#748C7B",
+    date: "Completed",
+    points: ["Core Android application development with Java."],
   },
 ];
 
 const projects = [
   {
-    name: "ATS Screener 🔍",
+    name: "InfyU SDK Frameworks",
     description:
-      "Free, open-source ATS resume screener that simulates 6 real enterprise platforms (Workday, Taleo, iCIMS, Greenhouse, Lever, SuccessFactors) instead of giving you one made-up score. Each platform uses its own weighted scoring model with verified math for keyword matching, format parsing, and experience evaluation. Features AI-powered scoring via Gemini with a rule-based fallback engine, PDF/DOCX parsing entirely in-browser, and per-platform optimization suggestions that reference specific lines in your resume. 500+ users on launch night.",
+      "Developed two reusable iOS frameworks for Unity-based applications, including Swift SDKs with C# bridging files for smooth Unity integration.",
     tags: [
       {
-        name: "SvelteKit 2",
+        name: "Swift",
         color: "blue-text-gradient",
       },
       {
-        name: "Gemini/NLP",
+        name: "Unity Bridge",
         color: "green-text-gradient",
       },
       {
-        name: "ATS-Simulation",
+        name: "SDK Development",
         color: "pink-text-gradient",
-      },
-      {
-        name: "Rule-Engine",
-        color: "blue-text-gradient",
       },
     ],
     image: atsscreenerlanding,
-    source_code_link: "https://github.com/sunnypatell/ats-screener",
-    live_project_link: "https://ats-screener.vercel.app",
-  },
-    {
-    name: "Axelot ✍️",
-    description:
-      "Axelot is a real-time collaborative writing and knowledge workspace built with Next.js 16, TypeScript, Firebase, TipTap 3, and Yjs. It supports multi-user editing with presence cursors, CRDT-based conflict-free sync over WebRTC, and AI-assisted editing via OpenRouter-backed Next.js API routes. Features secure auth with NextAuth v5 (Google/GitHub OAuth, email/password with bcrypt), Firestore-backed storage with Firebase custom tokens, a Vercel cron-powered trending algorithm, and production deployment via multi-stage Docker pipeline.",
-    tags: [
-      {
-        name: "Next.js 16",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "TipTap 3 / Yjs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "WebRTC",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "OpenRouter AI",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: axelotlanding,
-    source_code_link: "https://github.com/royce-mathew/axelot",
-    live_project_link: "https://www.axelot.io",
+    source_code_link: "https://github.com/brindadavda",
+    live_project_link: "https://github.com/brindadavda",
   },
   {
-    name: "Netdash (Networking Toolbox) 🌐",
+    name: "Custom Video & Engagement Frameworks",
     description:
-      "Netdash is a cross-platform Electron desktop app (macOS, Windows, Linux) with Homebrew distribution, featuring Firebase Auth with Google OAuth and real-time Firestore sync. It includes 15+ networking tools for subnetting, VLSM, IP conflict detection, and multi-vendor configuration generation. Built with RTT measurement via Performance API, TCP port scanning, DNS-over-HTTPS with TTL-aware caching, and RFC-compliant IPv4/IPv6 algorithms with WCAG2.2 accessibility compliance.",
+      "Built a custom video player framework supporting HLS, MP4, and MOV using AVFoundation and SwiftUI, along with a user engagement & tracking framework with push notifications and in-app messaging (Swift 6).",
     tags: [
       {
-        name: "Electron",
+        name: "AVFoundation",
         color: "blue-text-gradient",
       },
       {
-        name: "Firebase",
+        name: "SwiftUI",
         color: "green-text-gradient",
       },
       {
-        name: "DNS-over-HTTPS",
+        name: "Swift 6",
         color: "pink-text-gradient",
-      },
-      {
-        name: "WCAG2.2",
-        color: "blue-text-gradient",
       },
     ],
     image: netdashlanding,
-    source_code_link: "https://github.com/sunnypatell/netdash-toolkit/",
-    live_project_link: "https://netdash-toolkit.vercel.app/",
+    source_code_link: "https://github.com/brindadavda",
+    live_project_link: "https://github.com/brindadavda",
   },
   {
-    name: "SecureBank 🏦",
+    name: "Widget Pixel Pet",
     description:
-      "SecureBank is a deliberately vulnerable banking simulation built for Capture The Flag (CTF) training, focused on SQL injection and privilege escalation. It features exploit paths including raw query interpolation, single/double URL encoding, and a hidden admin portal to teach secure coding by example. Core features include transaction search/filter, a feedback system, and an admin dashboard with live DB console and security logs. Backed by a normalized SQLite schema with session handling via cookie-signature, and dockerized with structured challenge documentation.",
+      "Developed Widget Pixel Pet at Appcake using WidgetKit and SwiftUI, focused on interactive and polished iOS home-screen experiences.",
     tags: [
       {
-        name: "CTF",
+        name: "WidgetKit",
         color: "blue-text-gradient",
       },
       {
-        name: "SQLi/XSS",
+        name: "SwiftUI",
         color: "green-text-gradient",
       },
       {
-        name: "SQLite",
+        name: "iOS",
         color: "pink-text-gradient",
       },
-      {
-        name: "Docker",
-        color: "blue-text-gradient",
-      },
     ],
-    image: securebankdashboard,
-    source_code_link: "https://github.com/sunnypatell/securebank-ctf",
-    live_project_link: "https://github.com/sunnypatell/securebank-ctf",
+    image: axelotlanding,
+    source_code_link: "https://github.com/brindadavda",
+    live_project_link: "https://github.com/brindadavda",
   },
-  {
-    name: "Sunnify (Spotify Downloader) 🎵",
-    description:
-      "Sunnify is a Spotify downloader that reverse-engineers embed pages to extract track metadata by parsing protected JSON states without authentication. It features a cross-platform PyQt5 desktop client (macOS, Windows, Linux) with thread-safe UI updates and supports playlists with 1000+ tracks via Spotify's internal spclient API. Includes retry logic with exponential backoff for rate limiting, cross-platform FFmpeg detection, 43 pytest unit tests with GitHub Actions CI/CD, and ships as a Homebrew Cask.",
-    tags: [
-      {
-        name: "Python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "PyQt5",
-        color: "green-text-gradient",
-      },
-      {
-        name: "yt-dlp",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Homebrew",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: sunnifyimage,
-    source_code_link: "https://github.com/sunnypatell/sunnify-spotify-downloader",
-    live_project_link: "https://sunnify-spotify-downloader.vercel.app/",
-  },
-  // {
-  //   name: "FinancialFlow 💸",
-  //   description:
-  //     "Comprehensive personal finance management application built with Next.js and Typescript. It empowers users to take control of their financial health through intuitive tracking, insightful analytics, and personalized recommendations.",
-  //   tags: [
-  //     {
-  //       name: "React-native",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "Typescript",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "Tailwind CSS",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "Next.js",
-  //       color: "blue-text-gradient",
-  //     },
-  //   ],
-  //   image: financialflowimage,
-  //   source_code_link: "https://github.com/sunnypatell/financialflow",
-  //   live_project_link: "https://financial-flow.vercel.app/",
-  // },
-  // {
-  //   name: "Enterprise API Tester 🌐",
-  //   description:
-  //     "Comprehensive API testing tool with support for all major HTTP methods, authentication, and CORS-friendly proxy. Features include request import/export, real-world samples, and local storage for data persistence. Built with Next.js, and TypeScript for optimal performance and developer experience.",
-  //   tags: [
-  //     {
-  //       name: "Typescript",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "Tailwind CSS",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "Next.js",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "Authentication-Body",
-  //       color: "blue-text-gradient",
-  //     },
-  //   ],
-  //   image: enterpriseapitester,
-  //   source_code_link: "https://github.com/sunnypatell/enterprise-api-request-tester",
-  //   live_project_link: "https://enterprise-api-request-tester.vercel.app/",
-  // },
-  {
-    name: "KnifeThrow 🎯",
-    description:
-      "KnifeThrow is a Java Swing-based 2D mini-game, packed by maven with over 5000 lines of code. It includes a menu, game-over screens, sound effects, and custom sprites. Players unlock different knives with varied abilities in a dedicated knife shop. The game features improved collision systems, animations, and particle effects for an immersive experience.",
-    tags: [
-      {
-        name: "java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "swing",
-        color: "green-text-gradient",
-      },
-      {
-        name: "maven",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "arcadegame",
-        color: "green-text-gradient",
-      },
-    ],
-    image: knifethrowimage,
-    source_code_link: "https://github.com/sunnypatell/KnifeThrow",
-    live_project_link: "https://github.com/sunnypatell/KnifeThrow",
-  },
-  // {
-  //   name: "COVID-19 GTA Cases Data Analysis 🧪",
-  //   description:
-  //     "A deep dive into ongoing COVID-19 outbreaks in the Greater Toronto Area (GTA), Ontario. Using data from a government-licensed dataset called Outbreaks by Public Health Unit (PHU) to explore trends and patterns in these outbreaks. This data analysis integrates the essential aspects of the data science workflow (Filesize: 3.5 MiB, 62699 lines of raw dataset)",
-  //   tags: [
-  //     {
-  //       name: "python",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "tensorflow",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "scikit-learn",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "pandas",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "matplotlib",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "numpy",
-  //       color: "blue-text-gradient",
-  //     },
-  //   ],
-  //   image: pythonanalysis,
-  //   source_code_link: "https://drive.google.com/drive/folders/1cTbp-6-flypV-kj3-q606UwwWEralu11",
-  //   live_project_link: "https://drive.google.com/drive/folders/1cTbp-6-flypV-kj3-q606UwwWEralu11",
-  // },
-  // {
-  //   name: "Secure Password Generator 🔐",
-  //   description:
-  //     "Secure Password Generator is a Java-based tool designed to generate and manage secure passwords, prioritizing simplicity, security, and user-friendliness. It employs industry-standard encryption algorithms to create strong, unique passwords resistant to common hacking attempts.",
-  //   tags: [
-  //     {
-  //       name: "java",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "sha-256",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "encryption/decryption",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "data-algorithms",
-  //       color: "blue-text-gradient",
-  //     },
-  //   ],
-  //   image: password_generator,
-  //   source_code_link: "https://github.com/sunnypatell/SecurePasswordGenerator",
-  //   live_project_link: "https://github.com/sunnypatell/SecurePasswordGenerator",
-  // },
 ];
 
 const testimonials = [
