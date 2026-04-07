@@ -262,8 +262,8 @@ const experiences = [
   },
   {
     title: "iOS Developer",
-    company_name: "Zerones | Rajkot, Gujarat",
-    icon: microsoft,
+    company_name: "Zerones | Mumbai",
+    icon: google,
     iconBg: "#fff",
     date: "Jan 2024 - Sep 2024",
     points: [
@@ -275,7 +275,7 @@ const experiences = [
   {
     title: "Backend Intern",
     company_name: "Kevit Technologies | Rajkot, Gujarat",
-    icon: ibm,
+    icon: google,
     iconBg: "#fff",
     date: "Jul 2023 - Dec 2023",
     points: [
@@ -344,7 +344,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: atsscreenerlanding,
+    image: axelotlanding,
     source_code_link: "https://github.com/brindadavda",
     live_project_link: "https://github.com/brindadavda",
   },
@@ -388,7 +388,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: axelotlanding,
+    image: securebankdashboard,
     source_code_link: "https://github.com/brindadavda",
     live_project_link: "https://github.com/brindadavda",
   },

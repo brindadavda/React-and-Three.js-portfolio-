@@ -11,7 +11,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
-const CertificationCard = ({ title, icon, type, date, points, credential }) => (
+const CertificationCard = ({ title, icon, type, date, points }) => (
   <div className="certification-card bg-tertiary p-6 rounded-2xl w-full h-full flex flex-col justify-between no-select">
     <div>
       <div className="relative w-full h-[50px] mb-4">
@@ -34,16 +34,6 @@ const CertificationCard = ({ title, icon, type, date, points, credential }) => (
           </li>
         ))}
       </ul>
-    </div>
-    <div className="mt-4 flex justify-end no-select">
-      <a
-        href={credential}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="black-gradient text-secondary py-2 px-4 rounded-lg outline-none w-fit text-[12px] font-bold shadow-md shadow-primary transition-all hover:scale-105 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)] no-select"
-      >
-        View Credential
-      </a>
     </div>
   </div>
 );
@@ -170,11 +160,6 @@ const Extracurricular = () => {
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
           border: 1px solid rgba(255, 255, 255, 0.18);
           transition: all 0.3s ease-in-out;
-        }
-        .black-gradient {
-          background: #000000;
-          background: -webkit-linear-gradient(to right, #434343, #000000);
-          background: linear-gradient(to right, #434343, #000000);
         }
         @media (max-width: 768px) {
           .swiper-slide {
