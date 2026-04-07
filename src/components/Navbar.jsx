@@ -94,7 +94,7 @@ const Navbar = () => {
             <span 
               className='block' 
               style={{
-                fontFamily: "'Dancing Script', cursive",
+                fontFamily: "'Gill Sans', cursive",
                 fontSize: "26px",
                 background: "linear-gradient(90deg, #915EFF, #00BFFF)",
                 WebkitBackgroundClip: "text",
@@ -103,7 +103,7 @@ const Navbar = () => {
                 textFillColor: "transparent",
               }} 
             >
-              {"</"}Brinda Davda{">"}
+              Brinda Davda
             </span>
           </motion.p>
         </Link>
