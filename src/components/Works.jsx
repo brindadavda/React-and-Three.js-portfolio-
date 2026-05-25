@@ -7,6 +7,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn } from "../utils/motion";
+import { Magnetic } from "./canvas";
 
 const ProjectCard = ({
   name,
@@ -49,7 +50,7 @@ const ProjectCard = ({
         </div>
 
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <h3 className="text-white-100 font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
 
@@ -63,9 +64,11 @@ const ProjectCard = ({
 
         {live_project_link && (
           <a href={live_project_link} target="_blank" rel="noopener noreferrer">
-            <button className="mt-3 bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-md font-medium transition-all duration-300 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)]">
-              Live Project
-            </button>
+            <Magnetic range={50} strength={0.3}>
+              <button className="mt-3 bg-primary hover:bg-primary-dark text-white-100 px-4 py-2 rounded-md font-medium transition-all duration-300 hover:shadow-[0_0_10px_rgba(128,0,128,0.7)]">
+                Live Project
+              </button>
+            </Magnetic>
           </a>
         )}
       </Tilt>
