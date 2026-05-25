@@ -1,6 +1,6 @@
 <div align="center">
 
-# Sunny Patel — 3D Portfolio
+# Brinda Davda — 3D Portfolio
 
 <p align="center">
 	<a href="https://github.com/sunnypatell/react-threejs-portfolio/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/sunnypatell/react-threejs-portfolio?style=social"></a>
