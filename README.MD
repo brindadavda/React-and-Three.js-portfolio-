@@ -1,6 +1,6 @@
 <div align="center">
 
-# Brinda Davda — Premium 3D Portfolio
+# Brinda Davda — 3D Portfolio
 
 <p align="center">
 	<a href="https://github.com/brindadavda/React-and-Three.js-portfolio-/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/brindadavda/React-and-Three.js-portfolio-?style=social"></a>
