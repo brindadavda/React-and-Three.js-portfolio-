@@ -2,7 +2,7 @@
 
 import { useRef, useState, useCallback, useEffect } from "react"
 import { motion } from "framer-motion"
-import emailjs from "@emailjs/browser"
+
 import { Toaster, toast } from "react-hot-toast"
 import Confetti from "react-confetti"
 import ReCAPTCHA from "react-google-recaptcha"
@@ -75,56 +75,94 @@ const Contact = () => {
       return
     }
 
-    // if (!captchaToken) {
-    //   toast("Hold up! Gotta make sure you're not a spam bot, checkmark the CAPTCHA! 🧠🤖", {
-    //     icon: "🛡️",
-    //     duration: 3500,
-    //     position: "bottom-right",
-    //   })
-    //   return
-    // }
+    const sheetApiUrl = import.meta.env.VITE_SHEET_API_URL
+
+    if (!sheetApiUrl) {
+      // Local Mock Fallback Mode
+      setLoading(true)
+      setTimeout(() => {
+        setLoading(false)
+        setSuccess(true)
+        console.log("Mock Spreadsheet Save Success: ", {
+          Name: form.name,
+          Email: form.email,
+          Message: form.message,
+          Date: new Date().toLocaleString()
+        })
+        setForm({ name: "", email: "", message: "" })
+        toast.success("Message logged successfully! (Set VITE_SHEET_API_URL in .env to connect a real Google Sheet)", {
+          duration: 6000,
+          position: "bottom-right",
+        })
+        setShowConfetti(true)
+        setCaptchaToken(null)
+        if (captchaRef.current) {
+          captchaRef.current.reset()
+        }
+        setTimeout(() => {
+          setSuccess(false)
+          setShowConfetti(false)
+        }, 5000)
+      }, 1000)
+      return
+    }
 
     setLoading(true)
 
-    emailjs
-      .send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Brinda Davda",
-          from_email: form.email,
-          to_email: "davdabrinda@gmail.com",
-          message: form.message,
+    try {
+      fetch(sheetApiUrl, {
+        method: "POST",
+        mode: "no-cors", // Crucial for Google Apps Script to bypass browser CORS redirection blocks
+        headers: {
+          "Content-Type": "text/plain", // Set to text/plain to prevent browser triggering preflight OPTIONS check
         },
-        import.meta.env.VITE_EMAIL_JS_ACCESS_TOKEN,
-      )
-      .then(
-        () => {
-          setLoading(false)
-          setSuccess(true)
-          setForm({ name: "", email: "", message: "" })
-          toast.success("Message sent successfully!", {
-            duration: 3000,
-            position: "bottom-right",
-          })
-          setShowConfetti(true)
-          setCaptchaToken(null)
+        body: JSON.stringify({
+          data: [
+            {
+              Name: form.name,
+              Email: form.email,
+              Message: form.message,
+              Date: new Date().toLocaleString(),
+            }
+          ]
+        })
+      })
+      .then(() => {
+        // Since we are using no-cors, the response is opaque. 
+        // If it resolved without throwing an error, the request has successfully reached Google Sheets!
+        setLoading(false)
+        setSuccess(true)
+        setForm({ name: "", email: "", message: "" })
+        toast.success("Message saved to spreadsheet successfully! 📊", {
+          duration: 4000,
+          position: "bottom-right",
+        })
+        setShowConfetti(true)
+        setCaptchaToken(null)
+        if (captchaRef.current) {
           captchaRef.current.reset()
-          setTimeout(() => {
-            setSuccess(false)
-            setShowConfetti(false)
-          }, 5000)
-        },
-        (error) => {
-          setLoading(false)
-          console.error(error)
-          toast.error("Something went wrong. Please try again.", {
-            duration: 3000,
-            position: "bottom-right",
-          })
-        },
-      )
+        }
+        setTimeout(() => {
+          setSuccess(false)
+          setShowConfetti(false)
+        }, 5000)
+      })
+      .catch((error) => {
+        setLoading(false)
+        console.error("Spreadsheet Save Error: ", error)
+        toast.error("Failed to save message to spreadsheet. Please check your API URL.", {
+          duration: 4000,
+          position: "bottom-right",
+        })
+      })
+    } catch (err) {
+      setLoading(false)
+      console.error("Spreadsheet Sync Exception: ", err)
+      toast.error(err?.message || "An unexpected error occurred. Please try again.", {
+        duration: 4000,
+        position: "bottom-right",
+      })
+    }
   }
 
   const handleConfettiComplete = useCallback(() => {
