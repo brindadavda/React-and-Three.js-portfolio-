@@ -212,7 +212,7 @@ This repository is configured to serve your resume dynamically and cleanly at `/
 		</td>
 		<td>
 			<b>Brinda Davda</b><br/>
-			<a href="https://react-and-three-js-portfolio.vercel.app/">Website</a> • <a href="mailto:appstudio.devteam@gmail.com">Email</a>
+			<a href="https://brinda-davda-portfolio.vercel.app/">Website</a> • <a href="mailto:appstudio.devteam@gmail.com">Email</a>
 		</td>
 	</tr>
 	<tr>
@@ -226,6 +226,6 @@ This repository is configured to serve your resume dynamically and cleanly at `/
 
 ## Contact
 
-- **Portfolio**: https://react-and-three-js-portfolio.vercel.app/
+- **Portfolio**: https://brinda-davda-portfolio.vercel.app/
 - **Email**: appstudio.devteam@gmail.com
 - **Phone**: +91 78598 55287
