@@ -329,7 +329,7 @@ const extracurricular = [
     iconBg: "#748C7B",
     date: "Completed",
     points: ["Core Android application development with Java."],
-    certificate_link: "https://drive.google.com/file/d/1RKXGEmSCfz--WoOudQU5rl0o4SRnV5GR/view?usp=drive_link",
+    certificate_link: "https://drive.google.com/file/d/1zkqQgylWWZTDqSj88IX9tdpQGzW3chtI/view?usp=drive_link",
   },
 ];
 
